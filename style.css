@@ -1,0 +1,696 @@
+/* root colors */
+:root {
+  --orange-color: #fa7436;
+  --gray-color: #f7f8fc;
+  --bg-main:#FEFCFB;
+}
+
+/* base styling */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background: var(--bg-main);
+}
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+/* button styling */
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+.btn.dark {
+  background: var(--orange-color);
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+.btn.light {
+  color: #fa7436;
+  width: 160px;
+  height: 60px;
+  border: 1px solid #fa7436;
+  background: #ffffff;
+}
+span {
+  color: var(--orange-color);
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1134px;
+  top: 0;
+  padding: 32 0;
+  z-index: 100;
+  transition: all 500ms ease;
+}
+nav .logo {
+  font-family: "volkhov", serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #222222;
+}
+nav .logo img {
+  width: 19px;
+  height: 19px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+}
+nav ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  text-decoration: none;
+}
+.hero-section .left h1 {
+  font-family: "volkhov", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 70px;
+  width: 521px;
+}
+.hero-section .left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  width: 497px;
+}
+.hero-section .left {
+  flex: 1;
+  width: 521px;
+  height: 486px;
+}
+.hero-section .right {
+  width: 785px;
+  height: 585px;
+}
+.hero-section .right img {
+  height: 585px;
+}
+/* search bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 841px;
+    height: 124px;
+    margin-bottom: 120px;
+    padding: 32px 24px;
+    position: relative;
+    left: 100px;
+    background: #fff;
+    border-radius: 10px;
+}
+.search-bar p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  opacity: 0.5;
+}
+/* things you need section */
+
+section {
+  margin-top: 120px;
+}
+.things-your-need {
+  background: var(--gray-color);
+  width: 100%;
+  height: 100vh;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* line-height: 54px; */
+}
+.title h1 {
+  font-family: volkhov, serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+.title p {
+  font-weight: 400;
+  font-size: 18px;
+  width: 482px;
+  text-align: center;
+}
+.things-your-need .title img {
+  width: 180px;
+  height: 131px;
+}
+.things-your-need-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 64px;
+}
+.things-your-need-cards h3 {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.things-your-need-cards p {
+  font-weight: normal;
+  font-size: 16px;
+}
+.things-your-need-cards .sign-up-card {
+  width: 370px;
+  height: 278px;
+  padding: 40px;
+  border-radius: 8px;
+  background: #fff;
+}
+.things-your-need-cards .worth-of-money-card {
+  width: 370px;
+  height: 278px;
+  padding: 40px;
+  background: #fff;
+}
+.things-your-need-cards .exciting-travel-card {
+  width: 370px;
+  height: 278px;
+  padding: 40px;
+  background: #fff;
+}
+/* deal& discounts section */
+.deal-discounts .title-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.deal-discounts h1{
+    font-family: "volkhov", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+.deal-discounts p{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    width: 433px;
+    height: 64px;
+    margin: 24px 121px;;
+}
+.destination-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.destination {
+    /* text-align: center; */
+    width: 270px;
+    background: #FEFCFB;
+    border: none;
+}
+.destination img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.destination-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto 16px;
+    
+}
+.destination-name{
+    font-weight: medium;
+    font-size: 24px;
+    align-self: flex-start;
+}
+.destination-rating{
+    width: 48px;
+    height: 20px;
+    font-weight: 400;
+    color:#222222;
+    font-size: 16px;
+    align-self: flex-end;
+    position: relative;
+    top: -30px;
+}
+.destination-rating img{
+   width: 16px;
+   height: 16px;
+  margin-right: 4px;
+}
+.destination .destination-rating div {
+  position: relative;
+  bottom: 35px;
+  left: 25px;
+}
+
+.destination-country{
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+    align-self: flex-start;
+}
+.destination-price {
+    align-self: flex-end;
+    position: relative;
+    top: -30px;
+}
+
+.button {
+    background:var(--orange-color);
+    color: white;
+    padding: 9px 21px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: -220px;
+    right: 15px;
+    visibility: hidden;
+}
+.destination-container:hover .button{
+    visibility: visible;
+}
+/* best vacation plan part */
+.vacation-plan{
+    width: 100%;
+    height: 100vh;
+}
+.vacation-plan .title{
+    flex-direction: column;
+    text-align: center;
+}
+.vacation-plan h1{
+    font-family: "volkhov" , serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+.vacation-plan p{
+    font-weight: 400;
+    font-size: 18px;
+    width: 521px;
+}
+.vacation-plan .tree{
+    width: 106px;
+    height: 81px;
+    position: relative;
+    top: -180px;
+    left: 300px;
+}
+.vacation-plan .slider-btn{
+    align-self: flex-end;
+}
+.vacation-plan .vacation-plan-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+    height: 447px;
+    gap: 30px;
+    margin-top: 24px;
+}
+/* feedback part */
+.feedback{
+  width: 100%;
+  height: 100vh;
+  margin-top: 120px;
+  background: var(--gray-color);
+}
+.feedback .left{
+  width: 394px;
+  position: relative;
+  top: 200px;
+  margin-right: 120px;
+}
+.feedback .left h1{
+  font-family: "volkhov" , sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  margin-bottom: 0;
+}
+.feedback .left p{
+  font-family: "roboto" , sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+  width: 394px;
+}
+.feedback .right{
+  align-self: flex-end;
+  position: relative;
+  left: 500px;
+  bottom: 150px;
+}
+.feedback .right .profile-hero{
+  height: 68px;
+  width: 64px;
+  position: relative;
+  top: 25px;
+  right: 25px;
+}
+.feedback .right p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+.right .card1{
+  height: 245px;
+  width: 505px;
+  padding: 24px 64px 34px 34px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 1;
+}
+.right .card1 h3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: auto;
+  margin-bottom: 0;
+}
+.right .card1 div{
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: auto;
+  opacity: 0.6;
+}
+.right .card2{
+  height: 232px;
+  width: 502px;
+  padding-left: 34px;
+  padding-bottom: 22px;
+  margin-bottom: 0;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  opacity: 0.5;
+  position: relative;
+  bottom: 150px;
+  left: 60px;
+  z-index: 0;
+  clip-path: polygon(0% 0%, 100% 10%, 1000% 1000%, 0% 1000%);
+}
+.right .card2 div{
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: auto;
+  /* opacity: 0.3; */
+  position: relative;
+  top: 155px;
+}
+.right .card2 h3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: auto;
+  margin-bottom: 0;
+  align-self: flex-end;
+  position: relative;
+  top: 150px;
+  /* opacity: 0.5; */
+}
+.feedback .element3{
+  width: 169px;
+  height: 188px;
+  position: relative;
+  bottom: 600px;
+  left: 500px;
+}
+/* latest blog section */
+.letest-blog{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latest-blog h1{
+  font-family: "voikhov" , sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+}
+.latest-blog .latest-blog-cards{
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 388px;
+  gap: 30px;
+  margin-top: 64px;
+}
+.latest-blog-cards .content p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.latest-blog .content div{
+  font-family: "inter" , sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.4;
+}
+.latest-blog .slider-1{
+  position: relative;
+  left: 560px;
+  margin-bottom: 120px;
+  margin-top: 45px;
+}
+/* footer part */
+footer .search{
+  text-align: center;
+  width: 100%;
+  height: 416px;
+  background:var(--orange-color);
+  border-radius: 16px;
+}
+footer .search input{
+  width: 678px;
+  height: 68px;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  top: 64px;
+  left: 90px;
+  margin-top: 64px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  z-index: 100;
+}
+footer .search h1{
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  width: 708px;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -80px;
+  left: 271px;
+  color: #fff;
+}
+footer .search button{
+  height: 50px;
+  width: 132px;
+  border-radius: 8px;
+  background: var(--orange-color);
+  color: #fff;
+  border: none;
+  position: relative;
+  right: 100px;
+  top: 64px;
+  margin: 9px;
+  z-index: 100;
+}
+.search .mail-box img{
+  width: 19px;
+  height: 16px;
+  position: relative;
+  right: 580px;
+  top: 69px;
+  z-index: 100;
+}
+.search input::placeholder{
+  position: absolute;
+  left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  z-index: 0;
+
+}
+.elements .left-element{
+  position: relative;
+  bottom: 235px;
+
+}
+.elements .right-element{
+  position: relative;
+  bottom: 405px;
+}
+
+/* footer end part */
+.links-container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.links-container .details{
+  width: 254px;
+  height: 176px;
+  margin-right: 317px;
+  margin-bottom: 74px;
+}
+.links-container .details .social{
+  align-self: center;
+  width: 176px;
+  height: 48px;
+}
+.links-container .details h3{
+  font-family: "volkhov" , sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.links-container .details p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.links-container .links h3{
+  font-weight: 600px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.links-container .links ul{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 16px;
+  padding: 0;
+}
+.links-container .links ul li a{
+  text-decoration: none;
+  color: #666666;
+}
+.links-container .links{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+.line{
+  width: 100%;
+  height: 0;
+  border: 1px solid #999999;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+}
+/* media query */
+@media(max-width: 1100px){
+  .btn{
+    padding: 12px 32px;
+  }
+  .wrapper{
+    padding: 0 50px;
+  }
+  nav{
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 100px;
+    justify-content: flex-start;
+  }
+  header,
+  .hero-section, 
+  header .wrapper{
+    max-height: 1100px;
+  }
+  .hero-section .right img{
+    width: 110%;
+    height: 90vh;
+  }
+
+  /* deals & discounts */
+ .deal-discounts .destination{
+  padding: 10px;
+ }
+ /* vacation palan */
+ .vacation-plan{
+  height: 250vh;
+ }
+ .vacation-plan .vacation-plan-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 40%;
+ }
+ /* feedback */
+ .feedback{
+  width: 100%;
+  height: 100vh;
+ }
+ .feedback .right{
+  left: 400px;
+ }
+ .feedback .element3{
+  width: 130px;
+  height: 150px;
+ }
+ /* lateset blog */
+ .latest-blog{
+  height: 300vh;
+ }
+ .latest-blog-cards{
+  flex-wrap: wrap;
+  position: relative;
+  left: 40%;
+ }
+ .latest-blog .slider-1{
+  top: 65%;
+ }
+ /* footer */
+ .search{
+  width: 100%;
+  height: 416px;
+  
+ }
+ footer .search h1{
+  justify-content: flex-start;
+  left: 100px;
+ }
+}
